@@ -1,1 +1,35 @@
+1. User Identity Verification
+The whoami command is used to display the currently logged-in username.
+The groups command shows all the groups that the user account belongs to.
+This confirms the user identity and group memberships.
 
+2. Workspace Validation
+The pwd command prints the present working directory.
+The ls -l command lists all files and directories in the current location in long format, showing permissions, ownership, size, and timestamps.
+
+3. Environment Confirmation File
+The echo command is used to write the text “Linux user environment verified” into a file named user_info.txt.
+This confirms file creation and write permissions.
+
+4. File Integrity Check
+The wc -c command counts the number of characters in user_info.txt.
+This verifies the file’s content length.
+
+5. Learning the Tools
+The man mkdir command opens the manual page for the mkdir command.
+One useful option is -p, which creates parent directories if they do not already exist.
+
+6. Home Directory Inspection
+The ls ~ | sort command lists all files and directories in the home directory and sorts them alphabetically.
+
+7. Log Investigation
+The grep "admin" log.txt command searches for the word admin inside log.txt and displays only the matching lines.
+
+8. System Information Check
+The uname -r command displays the currently running Linux kernel version.
+
+9. Network Connectivity Test
+The ping www.google.com command sends ICMP packets to check network connectivity with an external server.
+
+10. System Health Awareness
+The uptime command shows how long the system has been running, the number of logged-in users, and the system load averages, indicating overall system health.
