@@ -1,1 +1,30 @@
+1. File Creation
+A file named sample_data.txt is created in the home directory and some sample text is added to it. This file will be used to demonstrate link behavior.
 
+2. Hard Link Creation
+A hard link named sample_hard.txt is created for sample_data.txt. A hard link points to the same inode as the original file, meaning both filenames refer to the same data on disk.
+
+3. Symbolic Link Creation
+A symbolic (soft) link named sample_soft.txt is created. A soft link acts as a pointer to the original file path rather than the actual data.
+
+4. Inode Verification
+The ls -li command is used to display inode numbers for sample_data.txt, sample_hard.txt, and sample_soft.txt.
+
+5. Inode Analysis
+The original file and the hard link share the same inode number because they reference the same data on disk.
+The symbolic link has a different inode because it only stores the path to the original file.
+
+6. File Metadata Inspection
+The stat command displays detailed file information such as permissions, ownership, size, and timestamps for sample_data.txt.
+
+7. Disk Usage Check
+The du -sh ~ command shows the total disk space used by the home directory in a human-readable format.
+
+8. File Size Overview
+The ls -lh ~ command lists all files in the home directory along with their sizes in a readable format.
+
+9. Link Deletion Test
+When the symbolic link sample_soft.txt is deleted, the original file sample_data.txt remains unaffected, proving that symbolic links do not contain the actual data.
+
+10. Disk Utility Demonstration
+The du command is used to estimate file and directory space usage, while the df command displays overall disk space usage of the filesystem. These commands help monitor storage utilization.
