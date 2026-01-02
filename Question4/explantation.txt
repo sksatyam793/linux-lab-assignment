@@ -1,1 +1,29 @@
+1. System Uptime Verification
+The uptime command is used to display the total time elapsed since the system was last booted. It also provides information about system load averages.
 
+2. User Process Listing
+The ps -u $USER command lists all processes currently running under the logged-in user account.
+
+3. CPU Usage Analysis
+The top command is used to monitor system processes in real time. By observing the CPU usage column, the process consuming the highest CPU among the user’s processes can be identified.
+
+4. Background Process Execution
+A command such as sleep can be started in the background using the & symbol. The jobs command verifies that the background process is running.
+
+5. Process Priority Management
+The renice command is used to change the priority (niceness value) of a running process. Adjusting the nice value affects how much CPU time the process receives.
+
+6. Memory Usage Monitoring
+The free -h command displays memory usage information in a human-readable format, including total, used, and available memory.
+
+7. Disk Space Inspection
+The df -h command shows disk space usage of the filesystem where the home directory resides, presented in a readable format.
+
+8. Shell Identification
+The echo $SHELL command displays the name of the shell currently being used by the user.
+
+9. Output Redirection
+Output redirection is demonstrated by redirecting the output of a system information command into a file named system_report.txt. This shows how command output can be stored for later use.
+
+10. Disk Usage Visualization
+The ncdu command provides an interactive, text-based disk usage viewer. It helps identify directories and files consuming the most disk space in a user-friendly manner.
