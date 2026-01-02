@@ -1,1 +1,30 @@
+1. Project Workspace Setup
+The mkdir documents command is used to create a new directory named documents inside the home directory. This directory is intended to store project-related files.
 
+2. File Creation
+The cd documents command changes the current working directory to documents.
+The touch plan.txt command creates an empty file named plan.txt.
+
+3. Content Addition
+The echo command is used to write sample text into plan.txt. This demonstrates how to add content to a file using the command line.
+
+4. File Metadata Verification
+The ls -l plan.txt command displays file permissions, ownership, file size, and modification time. The output confirms that the file belongs to the current user.
+
+5. File Duplication
+The cp plan.txt plan_copy.txt command creates a duplicate of plan.txt named plan_copy.txt, preserving the original file.
+
+6. Directory Renaming
+The mv documents project_documents command renames the directory to better reflect the project scope.
+
+7. Archival Structure
+The mkdir project_documents/archive command creates a subdirectory named archive inside the project_documents directory for organizing older files.
+
+8. File Organization
+The mv plan_copy.txt archive/ command moves the copied file into the archive directory, demonstrating file organization within subdirectories.
+
+9. Recursive Listing
+The ls -R project_documents command lists all files and subdirectories recursively, displaying the complete directory structure.
+
+10. Path Verification
+The realpath plan_copy.txt command displays the absolute path of plan_copy.txt after it has been moved to the archive directory.
